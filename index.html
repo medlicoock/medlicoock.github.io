@@ -31,10 +31,63 @@
             margin: 0 auto;
         }
 
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            gap: 2rem;
+        }
+
+        .title {
+            flex: 1;
+        }
+
+        .title h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #7dd3fc;
+        }
+
+        .title p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0 0;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-right: 2rem;
+        }
+
+        .vlaio-logo {
+            width: 200px;
+            height: auto;
+            align-self: center;
+        }
+
+        .challenge-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
         h2 {
             font-size: 2rem;
             margin-top: 2rem;
             color: #fff;
+        }
+
+        .challenge-box h2 {
+            margin-top: 0;
+            color: #7dd3fc;
         }
 
         ul {
@@ -59,7 +112,20 @@
     <div class="background">
         <div class="overlay">
             <div class="container">
-                <div class="section">
+                <header class="header">
+                    <div class="title">
+                        <h1>MEDLI</h1>
+                        <p>Making Edge AI Deployment Light and Impactful</p>
+                    </div>
+                    <div class="contact-info">
+                        <p><strong>Marjolein Deryck</strong><br>
+                        Project Manager<br>
+                        <a href="mailto:marjolein.deryck@kuleuven.be">marjolein.deryck@kuleuven.be</a></p>
+                    </div>
+                    <img src="VLAIO.png" alt="VLAIO Logo" class="vlaio-logo">
+                </header>
+
+                <div class="challenge-box">
                     <h2>CHALLENGE</h2>
                     <p>An increasing number of companies see the potential of AI at the 'edge' of the network, i.e., performing local data processing to enable real-time decisions without relying on the cloud. At the same time, modern deep-learning models are growing larger at a rapid pace, making it challenging to deploy them on edge devices with limited computing power and memory.</p>
                     <p>On top of that, companies often struggle with:</p>
