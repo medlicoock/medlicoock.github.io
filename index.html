@@ -15,9 +15,9 @@
         .background {
             min-height: 100vh;
             background: linear-gradient(135deg, 
-                #001f3f 0%,
-                #003366 50%,
-                #004080 100%);
+                #e6f3ff 0%,
+                #f0f8ff 50%,
+                #e6f3ff 100%);
             position: relative;
             overflow: hidden;
         }
@@ -63,16 +63,12 @@
         }
 
         .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 3rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            gap: 2rem;
+            display: block;
+            text-align: center;
             background-color: rgba(0, 20, 40, 0.7);
             border-radius: 12px;
             padding: 2rem;
+            margin-bottom: 3rem;
             border: 1px solid rgba(124, 211, 252, 0.2);
             box-shadow: 
                 0 8px 32px rgba(0, 0, 0, 0.1),
@@ -80,8 +76,16 @@
             backdrop-filter: blur(10px);
         }
 
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
         .title {
-            flex: 1;
+            text-align: left;
         }
 
         .title h1 {
@@ -98,20 +102,19 @@
         }
 
         .contact-info {
-            text-align: right;
+            text-align: center;
             font-size: 0.9rem;
             opacity: 0.9;
-            margin-right: 2rem;
+            margin-top: 1rem;
         }
 
         .vlaio-logo {
-            width: 200px;
+            width: 150px;
             height: auto;
-            align-self: center;
         }
 
         .challenge-box {
-            background-color: rgba(0, 20, 40, 0.7);
+            background-color: rgba(0, 20, 40, 0.85);
             border: 1px solid rgba(124, 211, 252, 0.2);
             border-radius: 12px;
             padding: 2rem;
@@ -148,11 +151,11 @@
         }
 
         .section {
-            background-color: rgba(0, 20, 40, 0.4);
+            background-color: rgba(0, 20, 40, 0.85);
             border-radius: 12px;
             padding: 2rem;
             margin-bottom: 2rem;
-            border: 1px solid rgba(124, 211, 252, 0.1);
+            border: 1px solid rgba(124, 211, 252, 0.2);
             backdrop-filter: blur(5px);
         }
 
@@ -167,16 +170,18 @@
         <div class="overlay">
             <div class="container">
                 <header class="header">
-                    <div class="title">
-                        <h1>MEDLI</h1>
-                        <p>Managing Edge Deployment of Large Deep Learning Models in Industry</p>
+                    <div class="title-container">
+                        <div class="title">
+                            <h1>MEDLI</h1>
+                            <p>Managing Edge Deployment of Large Deep Learning Models in Industry</p>
+                        </div>
+                        <img src="VLAIO.png" alt="VLAIO Logo" class="vlaio-logo">
                     </div>
                     <div class="contact-info">
                         <p><strong>Marjolein Deryck</strong><br>
                         Project Manager<br>
                         <a href="mailto:marjolein.deryck@kuleuven.be">marjolein.deryck@kuleuven.be</a></p>
                     </div>
-                    <img src="VLAIO.png" alt="VLAIO Logo" class="vlaio-logo">
                 </header>
 
                 <div class="challenge-box">
