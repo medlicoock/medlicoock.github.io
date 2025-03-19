@@ -246,6 +246,27 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .presentation-link {
+            display: inline-flex;
+            align-items: center;
+            background-color: #7dd3fc;
+            color: #1e2a3a;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .presentation-link:hover {
+            background-color: #5cc5f8;
+            text-decoration: none;
+        }
+
+        .presentation-link::before {
+            content: "📊";
+            margin-right: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -344,6 +365,14 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Project Presentation</h2>
+                        <p>View our detailed project presentation to learn more about MEDLI's goals, challenges, and solutions.</p>
+                        <a href="presentations/Kickoff_20250319.pptx" class="presentation-link" target="_blank">
+                            Download Project Presentation
+                        </a>
                     </div>
                 </div>
             </div>
